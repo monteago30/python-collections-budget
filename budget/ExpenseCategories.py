@@ -45,7 +45,7 @@ expenses.read_expenses('data/spending_data.csv')
 
     ax.pie(divided_expenses_sum, labels = labels, autopct = '%1.1f%%') #, shadow=True, startangle=90)
 
-    plt.show
+    plt.show()
 
 if __name__ == "__main__":
     main()
