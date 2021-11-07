@@ -36,7 +36,7 @@ expenses.read_expenses('data/spending_data.csv')
                         number=1000000,
                         globals=globals()))
 
-    fig, ax = plt.subslots()
+    fig, ax = plt.subplots()
     labels = ['Necessary', 'Food', 'Unnecessary']
 
     divided_expenses_sum = []
