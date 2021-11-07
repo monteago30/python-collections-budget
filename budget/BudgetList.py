@@ -1,13 +1,13 @@
 from . import Expense
 
 # Class that extends list type
-class BudgeList():
+class BudgetList():
     def __init__(self, budget):
         self.budget = budget
         self.sum_expenses = 0
         self.expenses = []
         self.sum_overages = 0
-        self.overage = []
+        self.overages = []
 
     def __len__(self):
         return (len(self.expenses) + len(self.overages))
@@ -19,8 +19,8 @@ class BudgeList():
             self.sum_expenses += item
         # Otherwise append to the overages list and add to the overage total
         else:
-            self.overage.append(item)
-            self.sum_overage+=item
+            self.overages.append(item)
+            self.sum_overages+=item
 
 def main():
     # Using above class
