@@ -23,7 +23,7 @@ from . import Expense
 expenses = Expense.Expenses()
 expenses.read_expenses('data/spending_data.csv')
                         ''',
-                        number=1000000,
+                        number=100000,
                         globals=globals()))
 
     print(timeit.timeit(stmt = "expenses.categorize_set_comprehension()",
@@ -33,7 +33,7 @@ from . import Expense
 expenses = Expense.Expenses()
 expenses.read_expenses('data/spending_data.csv')
                         ''',
-                        number=1000000,
+                        number=100000,
                         globals=globals()))
 
     fig, ax = plt.subplots()
